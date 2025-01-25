@@ -17,6 +17,8 @@ enum MODE {TAP, PUSH}
 
 @onready var cooldown: Timer = $Timer as Timer
 
+@onready var bubble_movement = $BubbleMovement
+
 var shader: ShaderMaterial
 
 var direction: Vector3 = Vector3()

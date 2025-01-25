@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://dqnkqd4qp7f7m"]
+[gd_scene load_steps=10 format=3 uid="uid://dqnkqd4qp7f7m"]
 
 [ext_resource type="Script" uid="uid://bl7ywij8kmhyv" path="res://scenes/bubble/bubble.gd" id="1_v753p"]
 [ext_resource type="Shader" uid="uid://dg40tftgivbd4" path="res://assets/shaders/bubble.gdshader" id="2_wsujy"]
 [ext_resource type="PackedScene" uid="uid://bo00wachdedgl" path="res://assets/models/frog.gltf" id="3_nyk43"]
+[ext_resource type="AudioStream" uid="uid://mjistdm5uod2" path="res://assets/audio/bubble_movement_loop.wav" id="4_1u8xl"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_ya7gu"]
 radius = 0.2
@@ -129,5 +130,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_h4fmw")
 
 [node name="Icosphere_019" parent="frog/frog" index="20"]
 surface_material_override/0 = SubResource("StandardMaterial3D_h4fmw")
+
+[node name="BubbleMovement" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_1u8xl")
 
 [editable path="frog/frog"]
