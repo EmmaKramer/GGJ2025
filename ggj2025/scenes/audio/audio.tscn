@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://drq28nxtpxed3"]
+
+[ext_resource type="AudioStream" uid="uid://6pjsqkenalvg" path="res://assets/audio/cave_ambience.ogg" id="1_3u06m"]
+[ext_resource type="Script" uid="uid://cp3gpemc2cal1" path="res://scenes/audio/audio.gd" id="1_eyfyw"]
+[ext_resource type="AudioStream" uid="uid://bbn4qqg1htlft" path="res://assets/audio/frog_music_v2.ogg" id="1_l3shp"]
+
+[node name="Audio" type="Node"]
+script = ExtResource("1_eyfyw")
+
+[node name="ambiance" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_3u06m")
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_l3shp")

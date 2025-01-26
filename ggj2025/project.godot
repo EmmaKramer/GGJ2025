@@ -18,8 +18,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Music="*res://scenes/audio/music.tscn"
-Ambiance="*res://scenes/audio/ambiance.tscn"
+Audio="*res://scenes/audio/audio.tscn"
 
 [input]
 

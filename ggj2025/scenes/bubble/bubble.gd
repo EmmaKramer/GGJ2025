@@ -25,6 +25,8 @@ var direction: Vector3 = Vector3()
 
 
 func _ready() -> void:
+	Audio.play_music()
+	Audio.play_ambiance()
 	shader = $MeshInstance3D.material_override
 	if mode == MODE.TAP:
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED

@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://cnohcl8ldnvg8"]
-
-[ext_resource type="AudioStream" uid="uid://6pjsqkenalvg" path="res://assets/audio/cave_ambience.ogg" id="1_gtwia"]
-[ext_resource type="Script" path="res://scenes/audio/ambiance.gd" id="2_h4c23"]
-
-[node name="Ambiance" type="AudioStreamPlayer"]
-stream = ExtResource("1_gtwia")
-script = ExtResource("2_h4c23")
