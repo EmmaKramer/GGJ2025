@@ -1,7 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dhu22u8bxpndt"]
+[gd_scene load_steps=9 format=3 uid="uid://dhu22u8bxpndt"]
 
 [ext_resource type="PackedScene" uid="uid://dqnkqd4qp7f7m" path="res://scenes/bubble/bubble.tscn" id="1_kfclf"]
 [ext_resource type="PackedScene" uid="uid://btxi0ibsi5l4q" path="res://scenes/levels/cave.tscn" id="2_fym4n"]
+
+[sub_resource type="GDScript" id="GDScript_fym4n"]
+script/source = "extends Node3D
+"
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_klwu5"]
 
@@ -21,6 +25,7 @@ uv1_scale = Vector3(0.06, 0.06, 0.06)
 uv1_triplanar = true
 
 [node name="Debug" type="Node3D"]
+script = SubResource("GDScript_fym4n")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)

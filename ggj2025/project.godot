@@ -16,6 +16,10 @@ run/main_scene="uid://dhu22u8bxpndt"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Music="*res://scenes/audio/music.tscn"
+
 [input]
 
 tap_up={

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2nibm6ktx1yy"]
+
+[ext_resource type="AudioStream" uid="uid://bbn4qqg1htlft" path="res://assets/audio/frog_music_v2.ogg" id="1_ctpig"]
+[ext_resource type="Script" uid="uid://uh6tx2c5f6kr" path="res://scenes/audio/music.gd" id="2_w5a1x"]
+
+[node name="Music" type="AudioStreamPlayer"]
+stream = ExtResource("1_ctpig")
+script = ExtResource("2_w5a1x")
